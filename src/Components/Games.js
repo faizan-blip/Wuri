@@ -8,9 +8,9 @@ export default function Games() {
 
   return (
     <>
-      <div
+      <div className='gamebody'
         style={{
-          height: '70vh',
+          height: '90vh',
           backgroundColor: '#100a2f',
           display: 'flex',
           justifyContent: 'center',

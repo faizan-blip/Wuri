@@ -49,6 +49,9 @@ input{
   .body{
     background-size:contain;
   }
+  .gamebody{
+    height: 70vh!important;
+  }
 .flex{
   gap: 60px!important;
 }
@@ -185,3 +188,54 @@ input{
 	background-color: #100a2f;
 	height: 1em;
   }
+
+
+  /*  */
+  .progress-bar-container {
+    width: 50%;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-top: 1em;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background-color:#D92E2E;
+    border-radius: 4px;
+    position: relative;
+  }
+  
+  .progress-bar span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 12px;
+    line-height: 1;
+    color: #fff;
+    padding: 0 4px;
+  }
+  
+  .progress-bar span:first-child {
+    left: 10%;
+  }
+  
+  .progress-bar span:nth-child(2) {
+    left: 30%;
+  }
+  
+  .progress-bar span:nth-child(3) {
+    left: 50%;
+  }
+  
+  .progress-bar span:nth-child(4) {
+    left: 70%;
+  }
+  
+  .progress-bar span:last-child {
+    right: 10%;
+    left: auto;
+  }
+  

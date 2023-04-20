@@ -27,13 +27,40 @@ export default function Landing() {
     return()=> clearInterval(timer)
    })
 
-const start = (()=>{
-      setStartie(true)
-})
-
+   let progress = 80;
+   var percentage = `${progress}%`;
+   const starPoints = [];
+   
+   for (let i = 20; i <= 100; i += 20) {
+     if (progress >= i) {
+       starPoints.push(<span key={i}>★</span>);
+     } else {
+       starPoints.push(<span key={i}>☆</span>);
+     }
+   }
+   
+   const start = () => {
+     setStartie(true);
+     setInterval(() => {
+       progress += 5;
+       if (progress > 100) {
+         progress = 100; 
+       }
+       percentage = `${progress}%`; 
+       starPoints.length = 0; 
+       for (let i = 20; i <= 100; i += 20) {
+         if (progress >= i) {
+           starPoints.push(<span key={i}>★</span>);
+         } else {
+           starPoints.push(<span key={i}>☆</span>);
+         }
+       }
+     }, 1000);
+   };
+   
   return (
 <>
-<body style={{backgroundImage:`url(${landing})`,backgroundPosition:"center" , backgroundRepeat:"no-repeat" , backgroundColor:"#100a2f" }} className='body'>
+<body style={{backgroundImage:`url(${landing})`,backgroundPosition:"center" , backgroundRepeat:"no-repeat" , backgroundColor:"#100a2f" , display:"flex" , justifyContent:"center" , alignItems:"center" }} className='body'>
     <div style={{ display:"flex" , justifyContent:"space-evenly" , alignItems:"center" , gap:"20px" , position:"relative" , top:"3em"}}  className='flex'>
       <div style={{width: "600px" ,height: "500px" , backdropFilter:"blur(8.5px)" , display:"flex" , flexDirection:"column" , borderRadius:"15px" , filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))", padding:"0 2em" ,  backgroundColor: "rgba(0, 0, 0, 0.50)" }} className='form'>
          <div style={{display:"flex" , justifyContent:"space-between" , margin:"0.5em 0", alignItems:"center"}}>
@@ -54,6 +81,11 @@ const start = (()=>{
         borderRadius: "15px",
         width:"250px", height:"50px" , border:"none" , fontSize:"18px" , fontWeight:"700"
         }}>Click to build the game</button>
+         <div className="progress-bar-container">
+      <div className="progress-bar" style={{ width: percentage }}>
+        {starPoints}
+      </div>
+    </div>
         {startie ?
         <p style={{color:"white" , fontSize:"14px"}}>0{minutes}:{seconds} Minutes remaining</p>
         : <p style={{color:"white" , fontSize:"14px"}}>00:00 Minutes remaining</p>}
