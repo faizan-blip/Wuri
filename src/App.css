@@ -39,12 +39,16 @@ input{
 
 @media (max-width: 768px) {
   .video {
-    width: 100%;
-    height: auto;
+    width: 410px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   
+  }
+  .flex{
+    position: relative;
+    top: 0em!important;
   }
   .body{
     background-size:contain;
@@ -55,12 +59,9 @@ input{
 .flex{
   gap: 60px!important;
 }
-  .video video {
-    width: 100%;
-    /* margin: 0 2em; */
-    height: 300px; 
-    margin: 0 -17em;
-  }
+.video video{
+  width: 100%;
+}
   .form{
     width: 410px!important;
     margin: 0 2em;
@@ -79,7 +80,7 @@ input{
   }
 }
 @media (max-width:547px){
-  .form{
+  .form , .video{
     width: 370px!important;
   }
   .form .but{
@@ -101,7 +102,7 @@ input{
 }
 
 @media (max-width:480px){
-  .form{
+  .form , .video{
     width: 330px!important;
   }
   .form .but{
@@ -121,7 +122,7 @@ input{
 }
 
 @media (max-width:450px){
-  .form{
+  .form , .video{
     width: 280px!important;
   }
   .form .but{

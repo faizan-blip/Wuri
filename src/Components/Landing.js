@@ -61,7 +61,7 @@ export default function Landing() {
   return (
 <>
 <body style={{backgroundImage:`url(${landing})`,backgroundPosition:"center" , backgroundRepeat:"no-repeat" , backgroundColor:"#100a2f" , display:"flex" , justifyContent:"center" , alignItems:"center" }} className='body'>
-    <div style={{ display:"flex" , justifyContent:"space-evenly" , alignItems:"center" , gap:"20px" , position:"relative" , top:"3em"}}  className='flex'>
+    <div style={{ display:"flex" , justifyContent:"space-evenly" , alignItems:"center" , gap:"40px" , position:"relative" , top:"3em"}}  className='flex'>
       <div style={{width: "600px" ,height: "500px" , backdropFilter:"blur(8.5px)" , display:"flex" , flexDirection:"column" , borderRadius:"15px" , filter: "drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))", padding:"0 2em" ,  backgroundColor: "rgba(0, 0, 0, 0.50)" }} className='form'>
          <div style={{display:"flex" , justifyContent:"space-between" , margin:"0.5em 0", alignItems:"center"}}>
         <input style={{background:"none", color:"white", border:"2px solid rgba(255, 255, 255)",borderRadius: "14px" , width:"190px" , height:"40px" }} type="text" name="" id="" placeholder='Enter Your App Name' className='button2' />
