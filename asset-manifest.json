@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Wuri/static/css/main.fc3022aa.css",
-    "main.js": "/Wuri/static/js/main.073a1ded.js",
+    "main.css": "/Wuri/static/css/main.9117b7aa.css",
+    "main.js": "/Wuri/static/js/main.aae83938.js",
     "static/js/787.0cff83ba.chunk.js": "/Wuri/static/js/787.0cff83ba.chunk.js",
     "static/media/video.mp4": "/Wuri/static/media/video.b9f5234d9bf7e6e3fb47.mp4",
     "static/media/2.jpg": "/Wuri/static/media/2.53a7dd96e780cf5be3ec.jpg",
@@ -10,12 +10,12 @@
     "static/media/WURI.png": "/Wuri/static/media/WURI.ac4d119c85d18e7fcc63.png",
     "static/media/logo.png": "/Wuri/static/media/logo.6ef9b199ed2ea21c54fc.png",
     "index.html": "/Wuri/index.html",
-    "main.fc3022aa.css.map": "/Wuri/static/css/main.fc3022aa.css.map",
-    "main.073a1ded.js.map": "/Wuri/static/js/main.073a1ded.js.map",
+    "main.9117b7aa.css.map": "/Wuri/static/css/main.9117b7aa.css.map",
+    "main.aae83938.js.map": "/Wuri/static/js/main.aae83938.js.map",
     "787.0cff83ba.chunk.js.map": "/Wuri/static/js/787.0cff83ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc3022aa.css",
-    "static/js/main.073a1ded.js"
+    "static/css/main.9117b7aa.css",
+    "static/js/main.aae83938.js"
   ]
 }
