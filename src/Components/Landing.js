@@ -91,15 +91,8 @@ export default function Landing() {
         : <p style={{color:"white" , fontSize:"14px"}}>00:00 Minutes remaining</p>}
          </div>
       </div>
-      <div className='video'><iframe
-        width="643"
-        height="442"
-        src={video}
-        title="Embedded video"
-        frameBorder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
-      ></iframe></div>
+      <div className='video'><video src={video}  width="643"
+        height="442" controls /></div>
       </div>
 </body>
 </>

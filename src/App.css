@@ -55,11 +55,11 @@ input{
 .flex{
   gap: 60px!important;
 }
-  .video iframe {
+  .video video {
     width: 100%;
     /* margin: 0 2em; */
     height: 300px; 
-    margin: 0 2em;
+    margin: 0 -17em;
   }
   .form{
     width: 410px!important;
